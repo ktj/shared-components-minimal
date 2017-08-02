@@ -1069,7 +1069,7 @@ clone-stats@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/clone-stats/-/clone-stats-0.0.1.tgz#b88f94a82cf38b8791d58046ea4029ad88ca99d1"
 
-clone@^1.0.0:
+clone@^1.0.0, clone@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.2.tgz#260b7a99ebb1edfe247538175f783243cb19d149"
 
@@ -1081,15 +1081,29 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-color-convert@^1.9.0:
+color-convert@^1.3.0, color-convert@^1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.0.tgz#1accf97dd739b983bf994d56fec8f95853641b7a"
   dependencies:
     color-name "^1.1.1"
 
-color-name@^1.1.1:
+color-name@^1.0.0, color-name@^1.1.1:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
+
+color-string@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-0.3.0.tgz#27d46fb67025c5c2fa25993bfbf579e47841b991"
+  dependencies:
+    color-name "^1.0.0"
+
+color@^0.11.1:
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/color/-/color-0.11.4.tgz#6d7b5c74fb65e841cd48792ad1ed5e07b904d764"
+  dependencies:
+    clone "^1.0.2"
+    color-convert "^1.3.0"
+    color-string "^0.3.0"
 
 combined-stream@^1.0.5, combined-stream@~1.0.5:
   version "1.0.5"
@@ -1844,15 +1858,16 @@ hosted-git-info@^2.1.4:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.5.0.tgz#6d60e34b3abbc8313062c3b798ef8d901a07af3c"
 
-hsl-shared-components@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/hsl-shared-components/-/hsl-shared-components-0.10.0.tgz#51bf7dfe90a189a9ce0aaf0bb19fbaa92037e0da"
+hsl-shared-components@^0.11.2:
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/hsl-shared-components/-/hsl-shared-components-0.11.2.tgz#22c906b05eae8d81da9e3e82f63f38dac94b7e8c"
   dependencies:
     classnames "^2.2.5"
     lodash "^4.17.4"
     moment "^2.18.1"
     polished "^1.2.1"
     react-primitives ktj/primitives-build
+    react-primitives-svg ktj/primitives-svg-build
 
 html-encoding-sniffer@^1.0.1:
   version "1.0.1"
@@ -3207,6 +3222,13 @@ react-devtools-core@2.3.1:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
+react-native-svg@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-5.3.2.tgz#ddb10600ac9f6a7b7ad86549c9a584f3dd838aac"
+  dependencies:
+    color "^0.11.1"
+    lodash "^4.16.6"
+
 react-native-web@0.0.x:
   version "0.0.118"
   resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.0.118.tgz#5a85fd62cc9214cfba2ff1c19e89635ce69ef91a"
@@ -3313,9 +3335,12 @@ react-native@0.46.4:
     xtend ">=4.0.0 <4.1.0-0"
     yargs "^6.4.0"
 
-"react-primitives@github:ktj/primitives-build", react-primitives@ktj/primitives-build:
+react-primitives-svg@ktj/primitives-svg-build:
+  version "0.0.2"
+  resolved "https://codeload.github.com/ktj/primitives-svg-build/tar.gz/52c80927f050f3a761a4373d09b3a12035343862"
+
+react-primitives@ktj/primitives-build:
   version "0.4.3"
-  uid "9340605b713a7ed868875e6cb311626621492d8d"
   resolved "https://codeload.github.com/ktj/primitives-build/tar.gz/9340605b713a7ed868875e6cb311626621492d8d"
   dependencies:
     animated "^0.1.5"

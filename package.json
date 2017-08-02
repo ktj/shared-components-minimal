@@ -7,9 +7,10 @@
 		"test": "jest"
 	},
 	"dependencies": {
-		"hsl-shared-components": "^0.10.0",
+		"hsl-shared-components": "^0.11.2",
 		"react": "16.0.0-alpha.12",
 		"react-native": "0.46.4",
+		"react-native-svg": "^5.3.2",
 		"react-primitives": "ktj/primitives-build",
 		"styled-components": "^2.1.1"
 	},

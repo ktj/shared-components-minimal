@@ -13,7 +13,7 @@ import {
 } from 'react-native';
 import Theme from './hsl.theme';
 import { ThemeProvider } from 'styled-components';
-import { Button, NewsFeedItem } from 'hsl-shared-components/lib/native';
+import { Button, NewsFeedItem, Icons } from 'hsl-shared-components/lib/native';
 
 export default class testi extends Component {
   render() {
@@ -22,7 +22,7 @@ export default class testi extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native 123!
+          HiphipHurraa
         </Text>
         <ThemeProvider theme={Theme}>
           <View>
@@ -33,6 +33,7 @@ export default class testi extends Component {
               timestamp={TODAY_2PM}
               image="https://placehold.it/500x500"
             />
+          <Icons.Edit width="200" height="200" fill="#d1d1d1" />
           </View>
         </ThemeProvider>
       </View>
